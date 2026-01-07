@@ -21,6 +21,7 @@ define KernelPackage/r8101
   DEPENDS:=@PCI_SUPPORT
   FILES:= $(PKG_BUILD_DIR)/r8101.ko
   AUTOLOAD:=$(call AutoProbe,r8101)
+  PROVIDES:=@kmod-r8169-any
 endef
 
 define Package/r8101/description
